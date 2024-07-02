@@ -16,7 +16,7 @@
    ![step3](https://github.com/chenchieh24/PROJECTS--Python/blob/main/todo_app/image/step3.png)
 
 4. 會出現一個網址(如下圖)，這就是 todo_app 的網頁，給他點下去 (ctrl+點網址)
-   ![step4](https://github.com/chenchieh24/PROJECTS--Python/blob/main/todo_app/image/step4.png =height="50%" wigth="50%")
+   ![step4](https://github.com/chenchieh24/PROJECTS--Python/blob/main/todo_app/image/step4.png)
 
 5. 成功進入 todo_app 頁面!!
 
