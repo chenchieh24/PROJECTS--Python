@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>- TODO List -</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+   
+    <form action="/add" method="post">
+        <input type="text" name="todo" placeholder="Enter a new todo">
+        <button type="submit">Add</button>
+    </form>
+
+    <ul>
+        {% for idx, todo in enumerate(todos) %}
+        <li>
+            {% if todo['done'] %}
+            <del>{{ todo['task'] }}</del>
+            {% else %}
+            {{ todo['task'] }}
+            <a href="/complete/{{ idx }}">[Complete]</a>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+
+    <form action="/delete_completed">
+        <button type="submit">Delete</button>
+    </form>
+</body>
+</html>
+
